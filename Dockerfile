@@ -13,4 +13,4 @@ ENV PATH="/venv/bin:$PATH"
 
 EXPOSE 8000
 
-CMD ["vllm", "serve", "--config", "config.yaml"]
+CMD ["uv", "run", "vllm", "serve", "--config", "config.yaml"]
